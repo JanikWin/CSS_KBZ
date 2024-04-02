@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flag Project</title>
+  <style>
+    /* Write your CSS Code here */
+    .flag {
+        width: 900px;
+        height: 600px;
+        position: relative;
+        background: red; /* Default color, will be partially covered by blue */
+        font-family: 'Arial', sans-serif; /* A common flag font */
+    }
+
+    .flag > p {
+        margin: 0;
+        color: white;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        font-size: 50px; /* Adjust font size as needed */
+        font-weight: bold; /* Make the font bold */
+        top: 10px; /* Adjust as needed */
+    }
+
+    .flag > div {
+        width: 900px;
+        height: 300px; /* This is the blue stripe, double the height of the red stripes */
+        background: #072b4d; /* Adjusted to a common flag blue */
+        position: absolute;
+        top: 150px; /* Positioning the blue stripe in the middle */
+    }
+
+    .flag > div > div {
+        width: 200px;
+        height: 200px;
+        background: white;
+        border-radius: 50%;
+        position: absolute;
+        left: calc(50% - 100px); /* Centers the circle within the blue stripe */
+        top: 50px; /* Centers the circle vertically within the blue stripe */
+    }
+
+    .flag > div > div > p {
+        margin: 0;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        font-size: 30px; /* Adjust font size as needed */
+        font-weight: bold; /* Make the font bold */
+        top: 80px; /* Position for 'of Laos' text */
+    }
+  </style>
+</head>
+<body>
+  <div class="flag">
+    <p>The Flag</p>
+    <div>
+      <div>
+        <p>of Laos</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
