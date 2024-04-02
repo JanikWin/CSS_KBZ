@@ -1,0 +1,26 @@
+/* Set all elements to have text-align: center */
+* {
+    text-align: center;
+    list-style-position: inside;
+    
+  }
+  
+  /* Set the CSS for all paragraph tags to "color: red" */
+  p {
+    color: red;
+    margin-bottom: 0;
+  }
+  
+  /* Set the CSS for the element with an id of "id-selector-demo" to "color: green" */
+  #id-selector-demo {
+    color: green;
+  }
+  
+  /* Set the CSS for the li elements that have the "value" attribute set to "4" to have "color: blue" */
+  li[value="4"] {
+    color: blue;
+  }
+  
+ol {
+    margin-top: 0;
+}
